@@ -25,10 +25,8 @@ function broadcastSpotlightPosition(position: {x?: number, y?: number}) {
 </script>
 
 <template>
-  <div>{{ position.x }}</div>
-  <div>{{ $attrs }}</div>
   <spotlight
-    :color="$attrs.color"
+    v-bind="$attrs"
     :active="active"
     :x="position.x"
     :y="position.y"

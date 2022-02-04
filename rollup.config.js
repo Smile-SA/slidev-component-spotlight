@@ -7,8 +7,8 @@ import resolve from "@rollup/plugin-node-resolve";
 import typescript from "rollup-plugin-typescript2";
 import ttypescript from "ttypescript";
 
-const name = "Spotlight";
-const lib = "spotlight";
+const name = "SlidevSpotlight";
+const lib = "slidev-spotlight";
 
 const external = ["vue", "@slidev/client/logic/nav", "@slidev/client/env", "spotlight-vue"];
 const globals = { vue: "Vue" };
