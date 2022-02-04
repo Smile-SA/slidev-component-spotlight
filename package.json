@@ -68,6 +68,6 @@
     "vue": "^3.2.27"
   },
   "dependencies": {
-    "spotlight-vue": "^0.4.1"
+    "spotlight-vue": "^0.4.3"
   }
 }

@@ -10,7 +10,7 @@ import ttypescript from "ttypescript";
 const name = "SlidevSpotlight";
 const lib = "slidev-spotlight";
 
-const external = ["vue", "@slidev/client/logic/nav", "@slidev/client/env", "spotlight-vue"];
+const external = ["vue", "@slidev/client/logic/nav", "@slidev/client/env", "@slidev/client/state", "spotlight-vue"];
 const globals = { vue: "Vue" };
 
 const esbrowserslist = fs
