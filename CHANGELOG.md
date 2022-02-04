@@ -1,3 +1,9 @@
+### 0.2.0 (2022-02-04)
+
+##### New Features
+
+*  hide presenter cursor when activating spotlight in presenter view ([dfa14c75](https://github.com/Smile-SA/slidev-component-spotlight/commit/dfa14c7556297bd0b2380addf47839479a7fe893))
+
 #### 0.1.1 (2022-02-04)
 
 ##### Bug Fixes
