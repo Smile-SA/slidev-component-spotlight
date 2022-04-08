@@ -1,3 +1,9 @@
+#### 0.2.1 (2022-04-08)
+
+##### Bug Fixes
+
+*  update version numbers ([2a266f9b](https://github.com/Smile-SA/slidev-component-spotlight/commit/2a266f9b8c3ad8a052331cd210ea112f2cc8a18b))
+
 ### 0.2.0 (2022-02-04)
 
 ##### New Features
