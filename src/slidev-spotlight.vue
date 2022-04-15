@@ -1,48 +1,46 @@
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
-import { serverState } from "@slidev/client/env";
-import { clicks, currentPage, isPresenter } from "@slidev/client/logic/nav";
+import { ref } from "vue";
+import { patch, onPatch } from "@slidev/client/state/shared";
+import { isPresenter } from "@slidev/client/logic/nav";
 import { showPresenterCursor } from "@slidev/client/state";
 
-import type { ServerState } from "@slidev/client/env";
+import type { SharedState } from "@slidev/client/state/shared";
 import type { Position } from "spotlight-vue";
 
-export interface SpotlightServerState extends ServerState {
-  spotlight: Position;
+declare module "@slidev/client/state/shared" {
+  interface SharedState {
+    spotlight: Partial<Position>;
+  }
 }
 
-const position = ref<Position>({ x: 0, y: 0 });
+const position = ref<Partial<Position>>({ x: 0, y: 0 });
 const active = ref(false);
 let showPresenterCursorSave: boolean;
 
-onMounted(() =>
-  serverState.$onPatch((serverstate) => {
-    const { spotlight } = serverstate as SpotlightServerState;
-    active.value = !!spotlight.x;
-    if (active.value) {
-      position.value = spotlight;
-    }
-  })
-);
+onPatch((patch) => {
+  const { spotlight } = patch as SharedState;
+  active.value = !!spotlight.x;
+  if (active.value) {
+    position.value = spotlight;
+  }
+});
 
-function activate(position: { x?: number; y?: number }) {
+function activate(position: Partial<Position>) {
   if (!active.value) {
     showPresenterCursorSave = showPresenterCursor.value;
   }
   broadcastSpotlightPosition(position);
 }
 
-function broadcastSpotlightPosition(position: { x?: number; y?: number }) {
+function broadcastSpotlightPosition(position: Partial<Position>) {
   active.value = !!position.x;
   if (isPresenter.value) {
     const showSpotlight = !!position.x;
-    if (showSpotlight) showPresenterCursor.value = false;
-    serverState.$patch({
-      page: currentPage.value,
-      clicks: clicks.value,
-      cursor: { x: -100, y: -100 },
-      spotlight: position,
-    } as ServerState);
+    if (showSpotlight) {
+      showPresenterCursor.value = false;
+    }
+    patch('cursor', { x: -100, y: -100 });
+    patch('spotlight', position);
     if (!showSpotlight) {
       showPresenterCursor.value = showPresenterCursorSave;
     }
