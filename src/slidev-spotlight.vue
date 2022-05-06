@@ -7,19 +7,13 @@ import { showPresenterCursor } from "@slidev/client/state";
 import type { SharedState } from "@slidev/client/state/shared";
 import type { Position } from "spotlight-vue";
 
-declare module "@slidev/client/state/shared" {
-  interface SharedState {
-    spotlight: Partial<Position>;
-  }
-}
-
 const position = ref<Partial<Position>>({ x: 0, y: 0 });
 const active = ref(false);
 let showPresenterCursorSave: boolean;
 
 onPatch((patch) => {
   const { spotlight } = patch as SharedState;
-  active.value = !!spotlight.x;
+  active.value = !!spotlight?.x;
   if (active.value) {
     position.value = spotlight;
   }
