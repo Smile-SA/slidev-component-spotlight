@@ -9,6 +9,12 @@
 *  update packages ([f50292e9](https://github.com/Smile-SA/slidev-component-spotlight/commit/f50292e96771b5ac1c5e911152fcda09589e2ab1))
 *  update to be compatible with the new shared state object ([6ebd266e](https://github.com/Smile-SA/slidev-component-spotlight/commit/6ebd266e133be7e9ec385d2db2bc260b2742e2f7))
 
+#### 0.3.1 (2022-05-17)
+
+##### Bug Fixes
+
+*  package entry points ([6b19cb12](https://github.com/Smile-SA/slidev-component-spotlight/commit/6b19cb125c62ba057786a23e0686b5fe5542bb1c))
+
 ### 0.3.0 (2022-05-06)
 
 ##### Chores
