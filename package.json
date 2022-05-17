@@ -10,9 +10,9 @@
   "bugs": {
     "url": "https://github.com/Smile-SA/slidev-component-spotlight/issues"
   },
-  "main": "dist/spotlight.js",
-  "browser": "dist/spotlight.mjs",
-  "module": "dist/spotlight.mjs",
+  "main": "dist/slidev-spotlight.js",
+  "browser": "dist/slidev-spotlight.mjs",
+  "module": "dist/slidev-spotlight.mjs",
   "types": "dist/types/src/index.d.ts",
   "files": [
     "dist/*",
