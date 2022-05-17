@@ -1,3 +1,9 @@
+#### 0.3.1 (2022-05-17)
+
+##### Bug Fixes
+
+*  package entry points ([6b19cb12](https://github.com/Smile-SA/slidev-component-spotlight/commit/6b19cb125c62ba057786a23e0686b5fe5542bb1c))
+
 ### 0.3.0 (2022-05-06)
 
 ##### Chores
