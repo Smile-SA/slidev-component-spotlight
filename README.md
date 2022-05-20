@@ -4,7 +4,9 @@
 
 Key activable spotlight for `Slidev`.
 
-Hold <kbd>Control</kbd> to activate the spotlight.
+![Spotlight demo](./assets/spotlight.gif)
+
+Hold <kbd>Shift</kbd> to activate the spotlight (can be customized).
 
 Also works in presenter mode.
 
@@ -14,17 +16,30 @@ Also works in presenter mode.
 npm i slidev-component-spotlight
 ```
 
-## Usage
+## Configuration
 
-Create a `./setup/main.ts` file in your `Slidev` project and register the plugin:
-```js
-import { defineAppSetup } from '@slidev/types'
-import SlidevSpotlightPlugin from 'slidev-component-spotlight'
+Define this package into your slidev addons.
 
-export default defineAppSetup(({ app, router }) => {
-  app.use(SlidevSpotlightPlugin)
-})
+In your slides metadata (using frontmatter):
 ```
+---
+addons:
+  - slidev-component-spotlight
+---
+```
+
+Or in your `package.json`:
+```json
+{
+  "slidev": {
+    "addons": [
+      "slidev-component-spotlight"
+    ]
+  }
+}
+```
+
+## Usage
 
 Create a `./global-top.vue` file in your `Slidev` project and use the component:
 ```vue
@@ -33,8 +48,19 @@ Create a `./global-top.vue` file in your `Slidev` project and use the component:
 </template>
 ```
 
-## Parameters
+## Components
 
-The component pass all the parameters to the [`spotlight-vue`](https://github.com/Smile-SA/spotlight-vue) component.
+### SlidevSpotlight
 
-The `active`, `x` and `y` parameters and the events are used internally by this component to work with the presenter mode of slidev.
+Component that displays the pager:
+```vue
+<SlidevSpotlight/>
+```
+
+Parameters:
+
+* `activationKey` (type: `string`, default: `'Shift'`): The key to hold down to activate the spotlight
+* `color` (type: `string`, default: `'black'`): CSS color of the spotlight shadow
+* `opacity` (type: `number | string`, default: `0.75`): Opacity of the spotlight shadow
+* `size` (type: `string`, default: `100px`): Size of the spotlight
+* `transitionDuration` (type: `string`, default: `200ms`): CSS transition durations

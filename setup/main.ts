@@ -1,6 +1,6 @@
-import { defineAppSetup } from "@slidev/types";
-import SlidevSpotlightPlugin from "../src/index";
+import { defineAppSetup } from '@slidev/types'
+import Spotlight from 'spotlight-vue';
 
 export default defineAppSetup(({ app }) => {
-  app.use(SlidevSpotlightPlugin);
+  app.use(Spotlight);
 });
