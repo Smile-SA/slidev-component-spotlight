@@ -1,3 +1,14 @@
+#### 1.0.1 (2023-01-25)
+
+##### Chores
+
+*  update packages ([e7fd96ca](https://github.com/Smile-SA/slidev-component-spotlight/commit/e7fd96ca1b1becadf47b85943b0448f482c42a6c))
+
+##### Bug Fixes
+
+*  update packages ([f50292e9](https://github.com/Smile-SA/slidev-component-spotlight/commit/f50292e96771b5ac1c5e911152fcda09589e2ab1))
+*  update to be compatible with the new shared state object ([6ebd266e](https://github.com/Smile-SA/slidev-component-spotlight/commit/6ebd266e133be7e9ec385d2db2bc260b2742e2f7))
+
 #### 0.2.1 (2022-04-08)
 
 ##### Bug Fixes
