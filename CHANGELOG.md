@@ -1,12 +1,29 @@
 #### 1.0.1 (2023-01-25)
 
+##### Bug Fixes
+
+*  update packages ([f50292e9](https://github.com/Smile-SA/slidev-component-spotlight/commit/f50292e96771b5ac1c5e911152fcda09589e2ab1))
+
+## 1.0.0 (2022-05-20)
+
+##### Refactors
+
+*  switch to use the new slidev addon system ([99c40c5a](https://github.com/Smile-SA/slidev-component-spotlight/commit/99c40c5ae0cfccd298aad6ad9eec681a3789e7a0))
+
+#### 0.3.1 (2022-05-17)
+
+##### Bug Fixes
+
+*  package entry points ([6b19cb12](https://github.com/Smile-SA/slidev-component-spotlight/commit/6b19cb125c62ba057786a23e0686b5fe5542bb1c))
+
+### 0.3.0 (2022-05-06)
+
 ##### Chores
 
 *  update packages ([e7fd96ca](https://github.com/Smile-SA/slidev-component-spotlight/commit/e7fd96ca1b1becadf47b85943b0448f482c42a6c))
 
 ##### Bug Fixes
 
-*  update packages ([f50292e9](https://github.com/Smile-SA/slidev-component-spotlight/commit/f50292e96771b5ac1c5e911152fcda09589e2ab1))
 *  update to be compatible with the new shared state object ([6ebd266e](https://github.com/Smile-SA/slidev-component-spotlight/commit/6ebd266e133be7e9ec385d2db2bc260b2742e2f7))
 
 #### 0.2.1 (2022-04-08)
