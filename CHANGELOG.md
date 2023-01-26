@@ -1,3 +1,21 @@
+#### 1.0.2 (2023-01-26)
+
+##### New Features
+
+* **docs:**
+  *  updated CHANGELOG.md ([ac7bb7e3](https://github.com/Smile-SA/slidev-component-spotlight/commit/ac7bb7e3337da01fcc848c58a87c962497218e5b))
+  *  updated CHANGELOG.md ([55fdb39f](https://github.com/Smile-SA/slidev-component-spotlight/commit/55fdb39f07277d090336d677bf45d9272299fe9c))
+  *  updated CHANGELOG.md ([08ac82c2](https://github.com/Smile-SA/slidev-component-spotlight/commit/08ac82c2085438b424ad207e3f791902ea7f2482))
+
+##### Bug Fixes
+
+*  dependencies ([e0aa40e3](https://github.com/Smile-SA/slidev-component-spotlight/commit/e0aa40e33c6e6260b02f833d5ee4d665b7afa21b))
+*  package entry points ([2713c6ae](https://github.com/Smile-SA/slidev-component-spotlight/commit/2713c6aeabab9d2f0f3ab1a48c7ff59f310116a5))
+
+##### Refactors
+
+*  switch to use the new slidev addon system ([efa89119](https://github.com/Smile-SA/slidev-component-spotlight/commit/efa8911905f9e82d35f8f1f0c1f05398eb2bd930))
+
 #### 1.0.1 (2023-01-25)
 
 ##### Bug Fixes
