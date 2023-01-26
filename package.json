@@ -36,11 +36,12 @@
     "slidev": ">=0.32.1"
   },
   "peerDependencies": {
-    "vue": "^3.2.34"
+    "vue": "^3.2.24",
+    "@slidev/client": "0.x"
   },
   "devDependencies": {
     "@slidev/cli": "0.x",
-    "@slidev/theme-default": "^0.21.2",
+    "@slidev/theme-default": "0.x",
     "@vueuse/shared": "^8.5.0",
     "generate-changelog": "^1.8.0",
     "vue": "^3.2.34"
