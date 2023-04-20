@@ -1,3 +1,9 @@
+#### 1.0.3 (2023-04-20)
+
+##### Bug Fixes
+
+*  vite 4.3 compatibility ([8ed4b326](https://github.com/Smile-SA/slidev-component-spotlight/commit/8ed4b3268d4460469b477fba829a96ecdbbd63f1))
+
 #### 1.0.2 (2023-01-26)
 
 ##### New Features
