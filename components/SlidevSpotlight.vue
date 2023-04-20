@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import { patch, onPatch } from "@slidev/client/state/shared";
-import { isPresenter } from "@slidev/client/logic/nav";
-import { showPresenterCursor } from "@slidev/client/state";
+import { patch, onPatch } from "@slidev/client/state/shared.ts";
+import { isPresenter } from "@slidev/client/logic/nav.ts";
+import { showPresenterCursor } from "@slidev/client/state/index.ts";
 
-import type { SharedState } from "@slidev/client/state/shared";
+import type { SharedState } from "@slidev/client/state/shared.ts";
 import type { Position } from "spotlight-vue";
 
 const position = ref<Partial<Position>>({ x: 0, y: 0 });
