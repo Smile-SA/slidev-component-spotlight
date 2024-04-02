@@ -1,12 +1,15 @@
 <script setup lang="ts">
+import 'spotlight-vue/dist/style.css';
 import { ref } from "vue";
+import { useNav } from "@slidev/client";
+import Spotlight from 'spotlight-vue';
 import { patch, onPatch } from "@slidev/client/state/shared.ts";
-import { isPresenter } from "@slidev/client/logic/nav.ts";
 import { showPresenterCursor } from "@slidev/client/state/index.ts";
 
 import type { SharedState } from "@slidev/client/state/shared.ts";
 import type { Position } from "spotlight-vue";
 
+const { isPresenter } = useNav();
 const position = ref<Partial<Position>>({ x: 0, y: 0 });
 const active = ref(false);
 let showPresenterCursorSave: boolean;
@@ -43,7 +46,7 @@ function broadcastSpotlightPosition(position: Partial<Position>) {
 </script>
 
 <template>
-  <spotlight
+  <Spotlight
     v-bind="$attrs"
     :active="active"
     :x="position.x"
