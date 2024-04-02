@@ -1,3 +1,13 @@
+### 1.1.0 (2024-04-02)
+
+##### Chores
+
+*  update license ([62b50db9](https://github.com/Smile-SA/slidev-component-spotlight/commit/62b50db97562b5950bef09b3b09c4c7ed4863740))
+
+##### Bug Fixes
+
+*  update deps + fix slidev and spotlight usage ([7a640134](https://github.com/Smile-SA/slidev-component-spotlight/commit/7a640134409be32122c9adeecae94f609cfdb2ba))
+
 #### 1.0.3 (2023-04-20)
 
 ##### Bug Fixes
